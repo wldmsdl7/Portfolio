@@ -1,7 +1,7 @@
-import AboutSection from "./components/sections/AboutSection";
-import HomeSection from "./components/sections/HomeSection";
-import ProjectsSection from "./components/sections/Projects";
-import SkillsSection from "./components/sections/Skills";
+import AboutSection from "./sections/AboutSection";
+import HomeSection from "./sections/HomeSection";
+import ProjectsSection from "./sections/Projects";
+import SkillsSection from "./sections/Skills";
 
 const MainPage = () => {
   return (
