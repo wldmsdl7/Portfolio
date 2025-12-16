@@ -1,4 +1,4 @@
-export const introduceItems = [
+export const INTRODUCE_ITEMS = [
   {
     title: "- 개발하는 것을 좋아해요 ! 🙈",
     content:

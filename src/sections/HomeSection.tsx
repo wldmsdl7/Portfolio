@@ -4,7 +4,7 @@ import { FaArrowRight, FaRegCommentDots } from "react-icons/fa";
 import { TerminalController } from "../components/HomeSection/Terminal";
 import { IoIosArrowForward } from "react-icons/io";
 import IntroduceItem from "../components/HomeSection/IntroduceItem";
-import { introduceItems } from "../constants/introduceItem";
+import { INTRODUCE_ITEMS } from "../constants/introduceItem";
 
 const HomeSection = () => (
   <section id="home" className="min-h-screen scroll-mt-16 p-8 relative">
@@ -32,7 +32,7 @@ const HomeSection = () => (
         </div>
         <div className="space-y-2">
           <div>
-            {introduceItems.map((item, idx) => (
+            {INTRODUCE_ITEMS.map((item, idx) => (
               <IntroduceItem key={idx} title={item.title}>
                 {item.content}
               </IntroduceItem>

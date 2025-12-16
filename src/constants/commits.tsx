@@ -1,4 +1,4 @@
-export const commits = [
+export const COMMITS = [
   {
     date: "2023.03",
     title: "feat: 가천대학교 소프트웨어전공 입학",
