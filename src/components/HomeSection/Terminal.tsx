@@ -2,7 +2,7 @@ import { useEffect, useRef, useState, type JSX } from "react";
 import Terminal, { ColorMode, TerminalOutput } from "react-terminal-ui";
 
 const TEXT =
-  "Welcome to the 징니's Portfolio!  \n안녕하세요 이삭, 저는 웹둥이 징니랍니당 ~ \n나름 웹 챌린저라고 포트폴리오도 열심히 만들어봤어요 :)\n\n즐거운 감상 되시길 바랍니다 !!\n\n clear 입력하시면 다시 재생됩니다.";
+  "Welcome to the 징니's Portfolio!  \n안녕하세요 이삭, 저는 웹둥이 징니랍니당 ~ \n나름 웹 챌린저라고 포트폴리오도 열심히 만들어봤어요 :)\n\n즐거운 감상 되시길 바랍니다 !!\n\nclear 입력하시면 다시 재생됩니다.";
 
 export const TerminalController = () => {
   const [displayText, setDisplayText] = useState("");
@@ -75,7 +75,6 @@ export const TerminalController = () => {
     <Terminal
       colorMode={ColorMode.Dark}
       onInput={done ? handleInput : undefined}
-      height=""
     >
       {!done && <TerminalOutput>{displayText}</TerminalOutput>}
       {done && lines}
