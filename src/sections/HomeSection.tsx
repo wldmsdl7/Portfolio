@@ -3,8 +3,8 @@ import Tag from "../components/HomeSection/Tag";
 import { FaArrowRight, FaRegCommentDots } from "react-icons/fa";
 import { TerminalController } from "../components/HomeSection/Terminal";
 import { IoIosArrowForward } from "react-icons/io";
-import { introduceItems } from "../constants/IntroduceItem";
 import IntroduceItem from "../components/HomeSection/IntroduceItem";
+import { introduceItems } from "../constants/introduceItem";
 
 const HomeSection = () => (
   <section id="home" className="min-h-screen scroll-mt-16 p-8 relative">
