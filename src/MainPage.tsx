@@ -1,6 +1,6 @@
 import AboutSection from "./sections/AboutSection";
 import HomeSection from "./sections/HomeSection";
-import ProjectsSection from "./sections/Projects";
+import ProjectSection from "./sections/ProjectSection";
 import SkillsSection from "./sections/SkillSection";
 
 const MainPage = () => {
@@ -12,7 +12,7 @@ const MainPage = () => {
       <HomeSection />
       <AboutSection />
       <SkillsSection />
-      <ProjectsSection />
+      <ProjectSection />
     </main>
   );
 };
