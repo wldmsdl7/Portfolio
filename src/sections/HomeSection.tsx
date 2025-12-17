@@ -10,11 +10,11 @@ const HomeSection = () => (
   <section id="home" className="min-h-screen relative">
     <main className="absolute inset-0 flex items-center justify-center w-full h-full">
       <div className="w-330 h-150 grid grid-cols-2 gap-10">
-        <div className="flex flex-col w-full h-full">
-          <div className="h-120 w-150 overflow-y-auto border rounded-lg bg-gray-900 p-4">
+        <div className="flex flex-col w-full h-full items-center">
+          <div className="h-120 w-160 overflow-y-auto border rounded-lg bg-gray-900 p-4">
             <TerminalController />
           </div>
-          <div className="mt-5 flex gap-3">
+          <div className="mt-5 flex gap-3 ">
             <Tag text="Full Stack Developer" color="blue" />
             <Tag text="Loves Coding" color="red" />
             <Tag text="Quick to Respond" color="yellow" />
