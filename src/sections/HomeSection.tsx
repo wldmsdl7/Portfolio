@@ -35,7 +35,7 @@ const HomeSection = () => (
             <span className="font-mono">Introduce Myself</span>
           </div>
 
-          <div className="flex flex-col w-full max-w-150 justify-center space-y-6 h-full">
+          <div className="flex flex-col w-full max-w-[600px] justify-center space-y-6 h-full">
             {INTRODUCE_ITEMS.map((item, idx) => (
               <IntroduceItem key={idx} title={item.title}>
                 {item.content}
