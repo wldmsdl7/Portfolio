@@ -1,3 +1,5 @@
+import GithubProfile from "../assets/Profile/githubImg.png";
+
 export const Navbar: React.FC = () => {
   return (
     <nav className="fixed top-0 left-0 w-full bg-white shadow-lg z-50 overflow-hidden">
@@ -5,7 +7,7 @@ export const Navbar: React.FC = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex text-xl font-bold text-gray-600 items-center">
             <span>
-              <img src="src/assets/Profile/githubImg.PNG" className="size-15" />
+              <img src={GithubProfile} className="size-15" />
             </span>{" "}
             wldmsdl7
           </div>
