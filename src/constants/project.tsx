@@ -15,7 +15,7 @@ export const PROJECT: Project[] = [
     description:
       "오늘의 뉴스를 간편하게 요약하고, AI 기반 퀴즈로 제공하여 사용자 참여와 학습을 돕는 뉴스 요약 서비스입니다.",
     isPublic: true,
-    images: ["TicketingWarrior/1.png"],
+    images: ["TicketingWarrior1.png"],
     url: "https://github.com/Project-Newsugar",
     technologies: [
       "React",
