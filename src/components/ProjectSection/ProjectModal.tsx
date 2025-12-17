@@ -95,16 +95,15 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
           <div>
             <SectionHeader title="역할" icon={<span>🎯</span>} />
             <div className="px-4 space-y-3">
-              {project.team ? (
+              {project.totalMembers !== 1 ? (
                 <>
                   <p className="text-gray-700">
-                    팀원{" "}
-                    {project.team.reduce((sum, role) => sum + role.count, 0)}
-                    명이 다음과 같이 역할 분담을 하였습니다.
+                    팀원 {project.totalMembers}명 이 다음과 같이 역할 분담을
+                    하였습니다.
                   </p>
 
                   <ol className="space-y-2">
-                    {project.team.map((role, index) => (
+                    {project.team?.map((role, index) => (
                       <li
                         key={index}
                         className={

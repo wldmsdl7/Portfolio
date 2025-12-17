@@ -16,4 +16,5 @@ export interface Project {
   keyFeatures: string[];
   reflections?: string;
   url: string;
+  totalMembers: number;
 }

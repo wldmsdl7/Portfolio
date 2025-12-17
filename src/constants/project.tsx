@@ -10,36 +10,40 @@ import HomeInspectorWeb2 from "../assets/projects/HomeInspectorWeb2.png";
 
 export const PROJECT: Project[] = [
   {
-    id: 5,
-    title: "Bandnol",
+    id: 6,
+    title: "Newsugar",
     description:
-      "인디밴드 노래를 하루 한 곡씩 주고받으며 함께 디깅하고 즐기는 팬 커뮤니티 플랫폼, 밴놀 (Bandnol)",
+      "오늘의 뉴스를 간편하게 요약하고, AI 기반 퀴즈로 제공하여 사용자 참여와 학습을 돕는 뉴스 요약 서비스입니다.",
     isPublic: true,
-    images: [Bandnol1],
-    url: "https://github.com/Bandnol/Bandnol-Server",
+    images: ["TicketingWarrior/1.png"],
+    url: "https://github.com/Project-Newsugar",
     technologies: [
-      "Node.js",
-      "PostgreSQL",
+      "React",
+      "Spring Boot",
+      "MySQL",
+      "Docker",
       "Redis",
-      "React Native",
       "Gemini API",
     ],
-    duration: "2025년 6월 ~ 2025년 8월",
+    duration: "2025년 12월 3일 ~ 2025년 1월 13일",
     team: [
       { role: "PM", count: 1 },
-      { role: "Frontend", count: 4 },
-      { role: "Backend", count: 3 },
+      { role: "Frontend (React)", count: 2 },
+      { role: "Backend (Spring Boot)", count: 2 },
+      { role: "Infra", count: 4 },
+      { role: "DevOps", count: 4 },
     ],
-    myRole: ["Backend (Node.js)"],
+    totalMembers: 4,
+    myRole: ["Frontend (React)", "Backend (Spring Boot)", "Infra", "DevOps"],
     keyFeatures: [
-      "하루 한 곡 추천 수신/발신 서비스",
-      "관심 아티스트 설정 및 관련 업데이트 확인",
-      "AI 코멘트 작성 보조 및 개인화",
-      "관심 아티스트 전용 채널 확인 및 팬 활동 기록",
-      "추천 기록 달력으로 곡 및 코멘트 관리",
+      "회원가입, 로그인, 로그아웃, 회원정보 수정 기능 구현",
+      "6시간마다 외부 뉴스 수집 및 AI 요약 생성",
+      "카테고리별 뉴스 요약 제공",
+      "AI 기반 퀴즈 생성 및 즉시 채점, 정답 공개",
+      "사용자 설정 알림 기능: 오전 뉴스 브리핑, 저녁 퀴즈 알림",
     ],
     reflections:
-      "이번 프로젝트는 제가 주도해야 하는 첫 프로젝트였습니다. 개발에 대한 지식이 많지 않아 처음에는 팀원들과 머리를 맞대고 하나하나 고민하며 개발해야 했습니다. 외부 API를 활용해 앱을 개발하는 것도 처음이었고, AI를 활용해 기능을 구현하는 것도 처음이어서, 처음 기능 명세서를 확정할 때 어떤 기능은 가능하고 어떤 기능은 어려운지 명확히 판단하기 어려웠습니다. 하지만 팀원들과 지속적으로 소통하며 매일 디스코드에 모여 함께 코딩한 덕분에 문제를 하나씩 해결해 나갈 수 있었고, 결국 프로젝트를 끝까지 완수할 수 있었습니다. 이번 경험을 통해 소통과 협업의 중요성을 깊이 느낄 수 있었고, 어려움 속에서도 포기하지 않고 끝까지 완수하는 과정에서 많은 성장을 할 수 있었습니다.",
+      "이번 프로젝트에서는 뉴스 수집, AI 요약, 퀴즈 로직과 같은 백엔드 기능과 함께 프론트엔드 화면 구현, 상태 관리, UI/UX 최적화 등 프론트 중심 작업도 수행했습니다. React를 기반으로 사용자 인터페이스를 설계하고, API 연동을 통해 실시간 뉴스와 퀴즈 데이터를 효율적으로 화면에 표시하도록 구현했습니다. 팀원과 협업하며 컴포넌트 구조 설계, 상태 관리 전략(Jotai) 적용, 반응형 UI 구현 등 실무적인 프론트엔드 경험을 쌓은 것이 큰 성과였습니다. 하지만 아직은 로컬 개발환경에서만 기능이 동작하므로, 앞으로 남은 3주 동안은 실제 배포 환경에서의 프론트 연동과 인프라 구성도 경험할 계획입니다. Docker 기반 빌드와 배포, CI/CD 파이프라인 연동, AWS 환경에서의 프론트 호스팅까지 참여하며 실무적인 프론트 운영 경험을 쌓고, 사용자 관점에서 안정적이고 직관적인 UI/UX를 제공하는 능력을 더욱 강화할 예정입니다.",
   },
   {
     id: 4,
@@ -64,8 +68,10 @@ export const PROJECT: Project[] = [
       { role: "PM", count: 1 },
       { role: "Frontend", count: 2 },
       { role: "Backend", count: 2 },
+      { role: "Infra", count: 2 },
       { role: "DevOps", count: 1 },
     ],
+    totalMembers: 5,
     myRole: ["Frontend (React)", "Backend (Node.js)"],
     keyFeatures: [
       "프론트엔드: API 전체 연동 및 Jotai 상태 관리",
@@ -78,6 +84,40 @@ export const PROJECT: Project[] = [
       "이번 프로젝트는 실제 대규모 트래픽 환경을 고려한 백엔드 시스템을 구축한 첫 경험이었습니다. 처음에는 Redis 기반 락 처리, ECS Fargate 자동 확장, Aurora RDS 트랜잭션 관리 등 새로운 기술 스택이 많아 어렵게 느껴졌지만, 팀원들과 지속적으로 협업하며 문제를 해결했습니다. 특히 부하 테스트(FA)를 통한 트래픽 시뮬레이션 과정에서, 시스템의 안정성과 확장성을 점검하며 설계 단계에서부터 성능 최적화의 중요성을 깨달았습니다. 이 경험을 통해 문제 해결 능력과 협업 능력 모두 크게 성장할 수 있었습니다.",
   },
   {
+    id: 5,
+    title: "Bandnol",
+    description:
+      "인디밴드 노래를 하루 한 곡씩 주고받으며 함께 디깅하고 즐기는 팬 커뮤니티 플랫폼, 밴놀 (Bandnol)",
+    isPublic: true,
+    images: [Bandnol1],
+    url: "https://github.com/Bandnol/Bandnol-Server",
+    technologies: [
+      "Node.js",
+      "PostgreSQL",
+      "Redis",
+      "React Native",
+      "Gemini API",
+    ],
+    duration: "2025년 6월 ~ 2025년 8월",
+    team: [
+      { role: "PM", count: 1 },
+      { role: "Designer", count: 1 },
+      { role: "Frontend", count: 4 },
+      { role: "Backend", count: 3 },
+    ],
+    totalMembers: 9,
+    myRole: ["Frontend(Flutter)", "Backend (Node.js)"],
+    keyFeatures: [
+      "하루 한 곡 추천 수신/발신 서비스",
+      "관심 아티스트 설정 및 관련 업데이트 확인",
+      "AI 코멘트 작성 보조 및 개인화",
+      "관심 아티스트 전용 채널 확인 및 팬 활동 기록",
+      "추천 기록 달력으로 곡 및 코멘트 관리",
+    ],
+    reflections:
+      "이번 프로젝트는 제가 주도해야 하는 첫 프로젝트였습니다. 개발에 대한 지식이 많지 않아 처음에는 팀원들과 머리를 맞대고 하나하나 고민하며 개발해야 했습니다. 외부 API를 활용해 앱을 개발하는 것도 처음이었고, AI를 활용해 기능을 구현하는 것도 처음이어서, 처음 기능 명세서를 확정할 때 어떤 기능은 가능하고 어떤 기능은 어려운지 명확히 판단하기 어려웠습니다. 하지만 팀원들과 지속적으로 소통하며 매일 디스코드에 모여 함께 코딩한 덕분에 문제를 하나씩 해결해 나갈 수 있었고, 결국 프로젝트를 끝까지 완수할 수 있었습니다. 이번 경험을 통해 소통과 협업의 중요성을 깊이 느낄 수 있었고, 어려움 속에서도 포기하지 않고 끝까지 완수하는 과정에서 많은 성장을 할 수 있었습니다.",
+  },
+  {
     id: 1,
     title: "Homeinspector App",
     description:
@@ -87,7 +127,9 @@ export const PROJECT: Project[] = [
     url: "",
     technologies: ["Flutter", "Node.js", "Firebase", "Nodemailer"],
     duration: "2024년 12월 ~",
-    myRole: ["Backend (Node.js)"],
+    team: [{ role: "개인 프로젝트", count: 1 }],
+    totalMembers: 1,
+    myRole: ["Frontend(Flutter)", "Backend (Node.js)"],
     keyFeatures: [
       "프론트엔드와 백엔드 전반의 이슈를 파악하고 해결",
       "회사 요청에 따라 기능 개선 및 추가 구현 진행",
@@ -98,7 +140,6 @@ export const PROJECT: Project[] = [
     reflections:
       "혼자 프론트엔드와 백엔드 역할을 모두 수행해야 했기 때문에, 전체적인 구조를 이해하고 각 기술 스택의 흐름을 빠르게 파악하는 데 어려움이 있었습니다. 특히 추가 기능 구현을 처음 할 때에는 화면 구현과 API 연동, 데이터베이스 설계 등 모든 과정을 혼자 감당해야 했기에 작업량과 복잡도가 상당히 높았습니다. 이러한 과정을 통해 전체 서비스의 흐름을 한눈에 조망하며 개발하는 능력을 기를 수 있었고, 프론트엔드와 백엔드 간의 연결 구조를 명확히 이해하고 조율하는 경험을 쌓을 수 있었습니다. 또한, 문제 해결 과정에서의 유연한 사고와 멀티태스킹 능력도 함께 향상되었습니다.",
   },
-
   {
     id: 2,
     title: "Homeinspector Web",
@@ -109,6 +150,8 @@ export const PROJECT: Project[] = [
     url: "",
     technologies: ["Flutter", "Node.js", "Firebase", "KakaoTalk API"],
     duration: "2024년 12월 ~ ",
+    team: [{ role: "개인 프로젝트", count: 1 }],
+    totalMembers: 1,
     myRole: ["Backend (Node.js)"],
     keyFeatures: [
       "단지 및 고객 등록: 정보를 손쉽게 등록하고 관리",
@@ -120,7 +163,6 @@ export const PROJECT: Project[] = [
     reflections:
       "혼자서 프론트엔드와 백엔드 역할을 모두 담당하다 보니, 전체적인 시스템 구조를 빠르게 파악하고 각 기술 스택의 흐름을 이해하는 데 어려움이 있었습니다. 특히, 추가 기능을 처음 구현할 때는 화면 구성부터 API 연동, 데이터베이스 설계까지 모든 작업을 혼자 처리해야 해서 업무량과 복잡도가 매우 높았습니다. 게다가 웹 서버 배포 경험이 처음이어서 해당 과정에서도 여러 어려움을 겪었습니다. 이 과정을 통해 전체 서비스의 전반적인 흐름을 한눈에 볼 수 있는 능력을 키웠고, 프론트엔드와 백엔드 간의 연동 구조를 명확히 이해하고 조율하는 소중한 경험을 쌓았습니다. 또한, 웹 서버 배포와 운영 환경 구성에 관한 실무 경험을 쌓으면서 문제 발생 시 유연하게 대처하고 여러 업무를 동시에 처리하는 역량도 크게 향상시켰습니다.",
   },
-
   {
     id: 3,
     title: "Delipus (딜리퍼스)",
@@ -132,9 +174,10 @@ export const PROJECT: Project[] = [
     technologies: ["React Native", "Spring Boot", "MySQL", "Firebase"],
     duration: "2025년 4월 ~ 2025년 6월",
     team: [
-      { role: "Frontend (React Native)", count: 1 },
-      { role: "Backend (Spring Boot)", count: 1 },
+      { role: "Frontend (React Native)", count: 2 },
+      { role: "Backend (Spring Boot)", count: 6 },
     ],
+    totalMembers: 8,
     myRole: ["Backend (Spring Boot)"],
     keyFeatures: [
       "회원가입: 이메일, 비밀번호 입력 및 유효성 검증",
