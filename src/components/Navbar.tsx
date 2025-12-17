@@ -1,6 +1,6 @@
 export const Navbar: React.FC = () => {
   return (
-    <nav className="fixed top-0 left-0 w-full bg-white shadow-lg z-50overflow-hidden">
+    <nav className="fixed top-0 left-0 w-full bg-white shadow-lg z-50 overflow-hidden">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <div className="flex text-xl font-bold text-gray-600 items-center">
