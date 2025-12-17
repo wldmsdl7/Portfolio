@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { FolderGit2 } from "lucide-react";
 import type { Project } from "../types/Project";
 import { ProjectModal } from "../components/ProjectSection/ProjectModal";
 import { PROJECT } from "../constants/project";
@@ -24,10 +23,7 @@ const ProjectSection = () => {
       <div className="max-w-7xl mx-auto space-y-8">
         <div className="flex items-center justify-between">
           <div className="flex flex-col items-start gap-2">
-            <div className="flex items-center gap-3">
-              <FolderGit2 size={32} color="#3b82f6" />
-              <h1 className="text-5xl font-bold">Projects</h1>
-            </div>
+            <h1 className="text-5xl font-bold">Projects</h1>
             <p className="text-sm text-gray-500">주요 프로젝트 포트폴리오</p>
           </div>
 

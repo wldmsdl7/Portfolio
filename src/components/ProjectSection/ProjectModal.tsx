@@ -3,6 +3,7 @@ import type { Project } from "../../types/Project";
 import { TechTag } from "./TechTag";
 import { SectionHeader } from "./SectionHeader";
 import { IsPublicCard } from "./IsPublicCard";
+import { useEffect } from "react";
 
 interface ProjectModalProps {
   project: Project | null;
@@ -11,8 +12,19 @@ interface ProjectModalProps {
 }
 
 export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isOpen]);
+
   if (!isOpen || !project) return null;
-  const isSingleImage = project.images.length === 1;
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
