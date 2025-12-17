@@ -8,11 +8,12 @@ export interface Project {
   title: string;
   description: string;
   isPublic: boolean;
-  imageUrl: string;
+  images: string[];
   technologies: string[];
   duration: string;
-  team: TeamMember[];
+  team?: TeamMember[];
   myRole: string[];
   keyFeatures: string[];
   reflections?: string;
+  url: string;
 }
