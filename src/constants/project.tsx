@@ -5,8 +5,8 @@ import Delipus1 from "../assets/projects/Delipus1.jpg";
 import TicketingWarrior1 from "../assets/projects/TicketingWarrior1.png";
 import TicketingWarrior2 from "../assets/projects/TicketingWarrior2.png";
 import HomeinspectorApp1 from "../assets/projects/HomeinspectorApp1.png";
-import HomeInspectorWeb1 from "../assets/projects/HomeInspectorWeb1.png";
-import HomeInspectorWeb2 from "../assets/projects/HomeInspectorWeb2.png";
+import HomeinspectorWeb1 from "../assets/projects/HomeinspectorWeb1.png";
+import HomeinspectorWeb2 from "../assets/projects/HomeinspectorWeb2.png";
 
 export const PROJECT: Project[] = [
   {
@@ -146,7 +146,7 @@ export const PROJECT: Project[] = [
     description:
       "사전점검 예약 고객에게 예약, 난방 신청, 예약 확정, 안내 등 다양한 상황에 맞는 카카오톡 메시지를 정해진 템플릿으로 자동 발송하는 웹 서비스입니다. 이를 통해 고객과의 소통을 체계적이고 효율적으로 관리할 수 있습니다.",
     isPublic: false,
-    images: [HomeInspectorWeb1, HomeInspectorWeb2],
+    images: [HomeinspectorWeb1, HomeinspectorWeb2],
     url: "",
     technologies: ["Flutter", "Node.js", "Firebase", "KakaoTalk API"],
     duration: "2024년 12월 ~ ",
