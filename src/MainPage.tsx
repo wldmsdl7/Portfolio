@@ -1,7 +1,7 @@
 import AboutSection from "./sections/AboutSection";
 import HomeSection from "./sections/HomeSection";
 import ProjectsSection from "./sections/Projects";
-import SkillsSection from "./sections/Skills";
+import SkillsSection from "./sections/SkillSection";
 
 const MainPage = () => {
   return (
