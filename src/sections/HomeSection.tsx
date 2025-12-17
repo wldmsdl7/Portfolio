@@ -10,8 +10,8 @@ const HomeSection = () => (
   <section id="home" className="min-h-screen relative">
     <main className="absolute inset-0 flex items-center justify-center w-full h-full">
       <div className="w-330 h-150 grid grid-cols-2 gap-10">
-        <div className="flex flex-col w-full h-full items-center">
-          <div className="h-120 w-160 overflow-y-auto border rounded-lg bg-gray-900 p-4">
+        <div>
+          <div className=" h-120 w-160 overflow-y-auto items-center">
             <TerminalController />
           </div>
           <div className="mt-5 flex gap-3 ">
