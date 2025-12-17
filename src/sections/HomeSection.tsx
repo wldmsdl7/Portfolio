@@ -7,7 +7,7 @@ import IntroduceItem from "../components/HomeSection/IntroduceItem";
 import { INTRODUCE_ITEMS } from "../constants/introduceItem";
 
 const HomeSection = () => (
-  <section id="home" className="min-h-screen scroll-mt-16 p-8 relative">
+  <section id="home" className="min-h-screen scroll mt-20 relative">
     <div className="max-w-7xl w-full h-full grid place-items-center">
       <div className="flex flex-col w-150 h-110 -translate-x-1/4 translate-y-1/2">
         <div className="flex-1 overflow-y-auto">
