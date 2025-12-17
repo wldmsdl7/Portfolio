@@ -22,17 +22,20 @@ const ProjectSection = () => {
   return (
     <section id="projects" className="min-h-screen scroll-mt-20 p-4">
       <div className="max-w-7xl mx-auto space-y-8">
-        <div className="max-w-7xl mt-10 mx-auto h-20 flex items-center">
-          <div className="flex flex-col gap-4 items-center">
-            <div className="flex flex-row items-center gap-3">
-              <FolderGit2 size={32} className="text-blue-600" />
+        <div className="flex items-center justify-between">
+          <div className="flex flex-col items-start gap-2">
+            <div className="flex items-center gap-3">
+              <FolderGit2 size={32} color="#3b82f6" />
               <h1 className="text-5xl font-bold">Projects</h1>
             </div>
             <p className="text-sm text-gray-500">주요 프로젝트 포트폴리오</p>
           </div>
-          <div className="text-right ml-auto">
-            <p className="text-gray-900 ">{PROJECT.length}</p>
-            <p className="text-lg text-gray-500">Total projects</p>
+
+          <div className="flex flex-col items-end gap-1">
+            <p className="text-gray-900 text-lg font-semibold">
+              {PROJECT.length}
+            </p>
+            <p className="text-sm text-gray-500">Total projects</p>
           </div>
         </div>
 
