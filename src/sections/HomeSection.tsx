@@ -21,16 +21,21 @@ const HomeSection = () => (
           </div>
         </div>
 
-        <div className="flex flex-col h-full space-y-6 justify-start">
-          <div>
-            <Tag text="Available for Hire" />
+        <div className="flex flex-col h-full space-y-6">
+          <div className="flex flex-col gap-4">
+            <div className="flex gap-3 flex-wrap">
+              <Tag text="Available for Hire" />
+            </div>
+
             <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mt-2">
               Hi, I'm <span className="text-blue-600">Jingni</span>
             </h1>
+
             <div className="flex items-center gap-2 text-xl text-gray-700 mt-2">
               <IoIosArrowForward className="text-gray-500" />
               <span className="font-mono">Introduce Myself</span>
             </div>
+
             <div className="space-y-2 mt-3">
               {INTRODUCE_ITEMS.map((item, idx) => (
                 <IntroduceItem key={idx} title={item.title}>
