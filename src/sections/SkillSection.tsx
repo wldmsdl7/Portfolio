@@ -18,7 +18,7 @@ const SkillsSection = () => {
   };
 
   return (
-    <section id="skills" className="min-h-screen scroll-mt-20 p-4">
+    <section id="skills" className="min-h-screen mt-20 p-4">
       <div className="max-w-7xl mt-10 mx-auto">
         <h1 className="text-5xl font-bold mb-10">Skills</h1>
         <div className="space-y-6">
