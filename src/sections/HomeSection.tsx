@@ -7,10 +7,10 @@ import IntroduceItem from "../components/HomeSection/IntroduceItem";
 import { INTRODUCE_ITEMS } from "../constants/introduceItem";
 
 const HomeSection = () => (
-  <section id="home" className="min-h-screen scroll mt-20 relative">
+  <section id="home" className="min-h-screen scroll mt-16 relative">
     <div className="max-w-7xl w-full h-full grid place-items-center">
-      <div className="flex flex-col w-150 h-110 -translate-x-1/4 translate-y-1/2">
-        <div className="flex-1 overflow-y-auto">
+      <div className="flex flex-col w-150 h-128 translate-x-1/3 translate-y-1/2">
+        <div className="overflow-y-auto min-h-10">
           <TerminalController />
         </div>
         <div className="mt-5 flex gap-3">
@@ -19,7 +19,7 @@ const HomeSection = () => (
           <Tag text="Quick to Respond" color="yellow" />
         </div>
       </div>
-      <div className="space-y-6 ml-auto translate-x-1/4 -translate-y-1/2 max-w-xl">
+      <div className="space-y-6 ml-auto translate-x-5/6 -translate-y-1/2 max-w-xl">
         <Tag text="Available for Hire" />
         <h1 className="text-5xl lg:text-6xl font-bold text-gray-900">
           Hi, I'm <span className="text-blue-600">Jingni</span>
