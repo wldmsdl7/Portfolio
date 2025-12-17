@@ -1,10 +1,10 @@
 import { useState, useRef, type ReactNode } from "react";
 import { RxTriangleDown, RxTriangleUp } from "react-icons/rx";
 
-type IntroduceItemProps = {
+interface IntroduceItemProps {
   title: string;
   children: ReactNode;
-};
+}
 
 const IntroduceItem: React.FC<IntroduceItemProps> = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false);
