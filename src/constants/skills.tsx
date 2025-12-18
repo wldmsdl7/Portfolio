@@ -9,11 +9,7 @@ export const SKILLS = {
         description: "컴포넌트 기반 UI 개발 및 상태 관리",
         level: 4,
       },
-      {
-        name: "TypeScript",
-        description: "타입 안정성을 통한 코드 품질 향상",
-        level: 4,
-      },
+
       {
         name: "Flutter",
         description: "크로스플랫폼 모바일 및 웹 앱 개발, 외주 및 유지보수",
@@ -25,14 +21,19 @@ export const SKILLS = {
         level: 3,
       },
       {
+        name: "TypeScript",
+        description: "타입 안정성을 통한 코드 품질 향상",
+        level: 4,
+      },
+      {
         name: "Javascript",
         description: "웹 애플리케이션 로직 구현",
-        level: 5,
+        level: 4,
       },
       {
         name: "HTML / CSS",
         description: "웹 마크업 및 스타일링",
-        level: 5,
+        level: 3,
       },
     ],
   },

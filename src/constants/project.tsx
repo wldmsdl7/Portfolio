@@ -7,6 +7,9 @@ import TicketingWarrior2 from "../assets/projects/TicketingWarrior2.png";
 import HomeinspectorApp1 from "../assets/projects/HomeinspectorApp1.png";
 import HomeinspectorWeb1 from "../assets/projects/HomeinspectorWeb1.png";
 import HomeinspectorWeb2 from "../assets/projects/HomeinspectorWeb2.png";
+import Newsugar1 from "../assets/projects/Newsugar1.png";
+import Newsugar2 from "../assets/projects/Newsugar2.png";
+import Newsugar3 from "../assets/projects/Newsugar3.png";
 
 export const PROJECT: Project[] = [
   {
@@ -15,7 +18,7 @@ export const PROJECT: Project[] = [
     description:
       "오늘의 뉴스를 간편하게 요약하고, AI 기반 퀴즈로 제공하여 사용자 참여와 학습을 돕는 뉴스 요약 서비스입니다.",
     isPublic: true,
-    images: ["TicketingWarrior1.png"],
+    images: [Newsugar1, Newsugar2, Newsugar3],
     url: "https://github.com/Project-Newsugar",
     technologies: [
       "React",
@@ -41,6 +44,7 @@ export const PROJECT: Project[] = [
       "카테고리별 뉴스 요약 제공",
       "AI 기반 퀴즈 생성 및 즉시 채점, 정답 공개",
       "사용자 설정 알림 기능: 오전 뉴스 브리핑, 저녁 퀴즈 알림",
+      "퀴즈 점수 및 내역 기반 뱃지 시스템 구현",
     ],
     reflections:
       "이번 프로젝트에서는 뉴스 수집, AI 요약, 퀴즈 로직과 같은 백엔드 기능과 함께 프론트엔드 화면 구현, 상태 관리, UI/UX 최적화 등 프론트 중심 작업도 수행했습니다. React를 기반으로 사용자 인터페이스를 설계하고, API 연동을 통해 실시간 뉴스와 퀴즈 데이터를 효율적으로 화면에 표시하도록 구현했습니다. 팀원과 협업하며 컴포넌트 구조 설계, 상태 관리 전략(Jotai) 적용, 반응형 UI 구현 등 실무적인 프론트엔드 경험을 쌓은 것이 큰 성과였습니다. 하지만 아직은 로컬 개발환경에서만 기능이 동작하므로, 앞으로 남은 3주 동안은 실제 배포 환경에서의 프론트 연동과 인프라 구성도 경험할 계획입니다. Docker 기반 빌드와 배포, CI/CD 파이프라인 연동, AWS 환경에서의 프론트 호스팅까지 참여하며 실무적인 프론트 운영 경험을 쌓고, 사용자 관점에서 안정적이고 직관적인 UI/UX를 제공하는 능력을 더욱 강화할 예정입니다.",
