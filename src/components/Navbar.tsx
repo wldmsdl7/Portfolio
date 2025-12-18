@@ -1,4 +1,4 @@
-import GithubProfile from "../assets/Profile/githubImg.png";
+import GithubProfile from "../assets/profile/githubImg.png";
 
 export const Navbar: React.FC = () => {
   return (
